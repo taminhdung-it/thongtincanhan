@@ -80,6 +80,7 @@ function openBank() {
 function openShareLink() {
   const link = "https://taminhdung-it.github.io/thongtincanhan/";
   openModal("Chia sẻ link", `
+    <div><strong>Link:</strong></div>
     <div class="link-share">${link}</div>
     <button class="primary-btn copy-btn" onclick="copyLink()">
       Copy link
@@ -105,23 +106,25 @@ function copyLink() {
 /* SHARE QR */
 function openShareQR() {
   openModal("Chia sẻ QR", `
-    <div class="qr-share">
-      <a href="./image/other/share-qr.png" download>
-        <img 
-          src="./image/other/share-qr.png" 
-          alt="QR chia sẻ"
-          style="width:220px;height:220px;border-radius:16px;"
-        >
+    <div class="bank-box">
+      <img 
+        src="./image/other/share-qr.png" 
+        alt="QR chia sẻ"
+      >
+
+      <div class="bank-info">
+        <div><strong>Link:</strong></div>
+        <div style="word-break:break-all;">
+          https://taminhdung-it.github.io/thongtincanhan/
+        </div>
+      </div>
+
+      <a href="./image/other/share-qr.png" download class="primary-btn">
+        Lưu ảnh QR
       </a>
     </div>
   `);
-
-  setTimeout(() => {
-    new QRCode(document.getElementById("shareQR"), {
-      text: "https://taminhdung-it.github.io/thongtincanhan/",
-      width: 220,
-      height: 220
-    });
-  }, 50);
 }
+
+
 
