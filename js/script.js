@@ -25,7 +25,7 @@ function openPhone() {
       📞 0389957512
     </div>
 
-    <a href="../contact/contact.vcf" download class="primary-btn">
+    <a href="./contact/contact.vcf" download class="primary-btn">
       Save to contacts
     </a>
   `);
@@ -36,7 +36,7 @@ function openMusic() {
   openModal("Bài hát", `
     <div class="media-box">
       <audio controls preload="metadata">
-        <source src="../music/bautroimoi.mp3" type="audio/mpeg">
+        <source src="./music/bautroimoi.mp3" type="audio/mpeg">
         Trình duyệt không hỗ trợ audio
       </audio>
     </div>
@@ -49,7 +49,7 @@ function openVideo() {
   openModal("Video", `
     <div class="media-box">
       <video controls autoplay>
-        <source src="../video/bautroimoi.mp4" type="video/mp4">
+        <source src="./video/bautroimoi.mp4" type="video/mp4">
       </video>
     </div>
   `);
@@ -60,7 +60,7 @@ function openVideo() {
 function openBank() {
   openModal("Vietcombank", `
     <div class="bank-box">
-      <img src="../image/other/QR_bank.png" alt="QR Vietcombank">
+      <img src="./image/other/QR_bank.png" alt="QR Vietcombank">
 
       <div class="bank-info">
         <div><strong>Ngân hàng:</strong> Vietcombank</div>
@@ -105,9 +105,9 @@ function copyLink() {
 function openShareQR() {
   openModal("Chia sẻ QR", `
     <div class="qr-share">
-      <a href="../image/other/share-qr.png" download>
+      <a href="./image/other/share-qr.png" download>
         <img 
-          src="../image/other/share-qr.png" 
+          src="./image/other/share-qr.png" 
           alt="QR chia sẻ"
           style="width:220px;height:220px;border-radius:16px;"
         >
