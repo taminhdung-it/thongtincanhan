@@ -48,8 +48,9 @@ function openMusic() {
 function openVideo() {
   openModal("Video", `
     <div class="media-box">
-      <video controls autoplay>
+      <video controls playsinline>
         <source src="./video/bautroimoi.mp4" type="video/mp4">
+        Trình duyệt không hỗ trợ video
       </video>
     </div>
   `);
