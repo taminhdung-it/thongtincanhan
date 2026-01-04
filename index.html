@@ -2,173 +2,116 @@
 <html lang="vi">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Link Page</title>
-    <meta name="viewport" content="width=375, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8" />
+    <title>Tạ Minh Dũng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
 
-    <div class="phone">
+    <div class="container">
+        <!-- SHARE BUTTONS -->
+        <div class="share-bar">
+            <button class="share-btn" onclick="openShareLink()">
+                <img src="./image/icons/share_link.png" alt="Share link">
+            </button>
 
+            <button class="share-btn" onclick="openShareQR()">
+                <img src="./image/icons/share_qr.png" alt="Share QR">
+            </button>
+        </div>
+
+        <!-- PROFILE -->
         <div class="profile">
-            <img src="./image/avatar.jpg" alt="avatar">
+            <img class="avatar" src="image/avatar.jpg" alt="Avatar">
             <h1>Tạ Minh Dũng</h1>
-            <p>Thích viết code</p>
-        </div>
-
-        <!-- MUSIC -->
-        <div class="section">
-            <div class="section-sub">🎵 Music</div>
-
-            <div class="pill pill-link video-toggle" data-type="audio">
-                <div class="pill-header">
-                    <i class="fa-solid fa-music"></i>
-                    <div class="pill-text">
-                        <span>Bản nhạc yêu thích</span>
-                        <small>Hãy cùng tận hưởng âm nhạc</small>
-                    </div>
-                </div>
-
-                <div class="video-box audio-only">
-                    <audio controls preload="metadata" controlslist="nodownload">
-                        <source src="./music/bautroimoi.mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
-        </div>
-
-        <!-- VIDEO -->
-        <div class="section">
-            <div class="section-sub">🎬 Video</div>
-
-            <div class="pill pill-link video-toggle" data-type="video">
-                <div class="pill-header">
-                    <i class="fa-solid fa-film"></i>
-                    <div class="pill-text">
-                        <span>Video yêu thích</span>
-                        <small>Hãy cùng xem video nào</small>
-                    </div>
-                </div>
-
-                <div class="video-box">
-                    <video controls preload="metadata">
-                        <source src="./video/bautroimoi.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
+            <p>Thích nghiên cứu và viết code</p>
         </div>
 
         <!-- LINKS -->
-        <div class="section">
-            <div class="section-sub">🔗 Links</div>
+        <div class="links">
 
-            <a class="pill pill-link" href="https://www.facebook.com/ta.minh.dung.758901" target="_blank">
-                <div class="pill-header">
-                    <img src="./image/icons/facebook.png" class="pill-icon" alt="Facebook">
-                    <div class="pill-text">
-                        <span>Facebook</span>
-                        <small>Mở liên kết ngoài</small>
-                    </div>
-                </div>
-            </a>
-            <a class="pill pill-link" href="https://zalo.me/0389957512" target="_blank">
-                <div class="pill-header">
-                    <img src="./image/icons/zalo.png" class="pill-icon" alt="Facebook">
-                    <div class="pill-text">
-                        <span>Zalo</span>
-                        <small>Mở liên kết ngoài</small>
-                    </div>
-                </div>
-            </a>
-            <a class="pill pill-link" href="https://t.me/taminhdung2001" target="_blank">
-                <div class="pill-header">
-                    <img src="./image/icons/telegram.png" class="pill-icon" alt="Facebook">
-                    <div class="pill-text">
-                        <span>Facebook</span>
-                        <small>Mở liên kết ngoài</small>
-                    </div>
-                </div>
-            </a>
-            <a class="pill pill-link" href="https://www.tiktok.com/@montsukasa?_r=1&_t=ZS-92nBV8pNCfn" target="_blank">
-                <div class="pill-header">
-                    <img src="./image/icons/tiktok.png" class="pill-icon" alt="Facebook">
-                    <div class="pill-text">
-                        <span>Tiktok</span>
-                        <small>Mở liên kết ngoài</small>
-                    </div>
-                </div>
-            </a>
-            <a class="pill pill-link" href="https://discord.gg/6mgB7nPD" target="_blank">
-                <div class="pill-header">
-                    <img src="./image/icons/discord.png" class="pill-icon" alt="Facebook">
-                    <div class="pill-text">
-                        <span>Discord</span>
-                        <small>Mở liên kết ngoài</small>
-                    </div>
-                </div>
-            </a>
-            <a class="pill pill-link" href="https://x.com/GameThMon1" target="_blank">
-                <div class="pill-header">
-                    <img src="./image/icons/x.png" class="pill-icon" alt="Facebook">
-                    <div class="pill-text">
-                        <span>X</span>
-                        <small>Mở liên kết ngoài</small>
-                    </div>
-                </div>
-            </a>
-            <a class="pill pill-link" href="https://www.instagram.com/mdungta?igsh=MWRnYm0xNm5pcng2Mg==" target="_blank">
-                <div class="pill-header">
-                    <img src="./image/icons/instagram.png" class="pill-icon" alt="Facebook">
-                    <div class="pill-text">
-                        <span>Instagram</span>
-                        <small>Mở liên kết ngoài</small>
-                    </div>
-                </div>
-            </a>
-            <a class="pill pill-link" href="https://www.youtube.com/@TWOFGaming?sub_confirmation=1" target="_blank">
-                <div class="pill-header">
-                    <img src="./image/icons/youtube.png" class="pill-icon" alt="Facebook">
-                    <div class="pill-text">
-                        <span>Youtube</span>
-                        <small>Mở liên kết ngoài</small>
-                    </div>
-                </div>
-            </a>
-            <a class="pill pill-link" href="./contact/contact.vcf" target="_blank">
-                <div class="pill-header">
-                    <img src="./image/icons/phone.png" class="pill-icon" alt="Facebook">
-                    <div class="pill-text">
-                        <span>Số điện thoại</span>
-                        <small>Lưu danh bạ</small>
-                    </div>
-                </div>
-            </a>
-            <div class="pill pill-link qr-toggle">
-                <div class="pill-header">
-                    <img src="./image/icons/bank.png" class="pill-icon" alt="Bank">
-                    <div class="pill-text">
-                        <span>Ngân hàng</span>
-                        <small>Quét QR để chuyển khoản</small>
-                    </div>
-                </div>
+            <button class="link-btn" onclick="openMusic()">
+                <img src="./image/icons/music.png">
+                <span>Bài hát</span>
+            </button>
 
-                <div class="qr-box">
-                    <img src="./image/other/QR_bank.png" alt="QR MB Bank">
-                    <div class="qr-info">
-                        <strong>Vietcombank</strong>
-                        <span>TA MINH DUNG</span>
-                        <span>9389957512</span>
-                    </div>
-                </div>
-            </div>
+            <button class="link-btn" onclick="openVideo()">
+                <img src="./image/icons/video.png">
+                <span>Video</span>
+            </button>
+
+            <a class="link-btn" href="https://www.facebook.com/ta.minh.dung.758901" target="_blank">
+                <img src="./image/icons/facebook.png">
+                <span>Facebook</span>
+            </a>
+
+            <a class="link-btn" href="https://zalo.me/0389957512" target="_blank">
+                <img src="./image/icons/zalo.png">
+                <span>Zalo</span>
+            </a>
+
+            <a class="link-btn" href="https://t.me/taminhdung2001" target="_blank">
+                <img src="./image/icons/telegram.png">
+                <span>Telegram</span>
+            </a>
+
+            <a class="link-btn" href="https://www.tiktok.com/@montsukasa?_r=1&_t=ZS-92nBV8pNCfn" target="_blank">
+                <img src="./image/icons/tiktok.png">
+                <span>Tik Tok</span>
+            </a>
+
+            <a class="link-btn" href="https://discord.gg/6mgB7nPD" target="_blank">
+                <img src="./image/icons/discord.png">
+                <span>Discord</span>
+            </a>
+
+            <a class="link-btn" href="https://www.instagram.com/mdungta?igsh=MWRnYm0xNm5pcng2Mg==" target="_blank">
+                <img src="./image/icons/instagram.png">
+                <span>Instagram</span>
+            </a>
+
+            <a class="link-btn" href="https://www.youtube.com/@TWOFGaming?sub_confirmation=1" target="_blank">
+                <img src="./image/icons/youtube.png">
+                <span>Youtube</span>
+            </a>
+
+            <button class="link-btn" onclick="openPhone()">
+                <img src="./image/icons/phone.png">
+                <span>Số điện thoại</span>
+            </button>
+
+            <button class="link-btn" onclick="openBank()">
+                <img src="./image/icons/bank.png">
+                <span>Vietcombank</span>
+            </button>
+
         </div>
-
-        <div class="footer">© Bản quyền của Tạ Minh Dũng</div>
     </div>
 
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-sheet">
+
+            <div class="modal-header">
+                <span></span>
+                <h3 id="modalTitle">Title</h3>
+                <button class="icon-btn" onclick="closeModal()">✕</button>
+            </div>
+
+            <div class="modal-body" id="modalContent"></div>
+
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+    <footer class="footer">
+        <span class="copyright">©</span>
+        <span>Bản quyền thuộc về taminhdung-it</span>
+    </footer>
+    <!-- QR LIB -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
