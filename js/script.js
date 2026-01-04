@@ -123,8 +123,24 @@ function openShareQR() {
 
 function downloadQR() {
   const img = document.querySelector("#shareQR img");
-  const link = document.createElement("a");
-  link.href = img.src;
-  link.download = "share-qr.png";
-  link.click();
+  if (!img) return;
+
+  const canvas = document.createElement("canvas");
+  const size = img.naturalWidth;
+  canvas.width = size;
+  canvas.height = size;
+
+  const ctx = canvas.getContext("2d");
+  ctx.drawImage(img, 0, 0);
+
+  canvas.toBlob(blob => {
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "share-qr.png";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }, "image/png");
 }
