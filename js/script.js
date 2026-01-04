@@ -25,7 +25,7 @@ function openPhone() {
       📞 0389957512
     </div>
 
-    <a href="./contact/contact.vcf" download class="primary-btn">
+    <a href="../contact/contact.vcf" download class="primary-btn">
       Save to contacts
     </a>
   `);
@@ -60,7 +60,7 @@ function openVideo() {
 function openBank() {
   openModal("Vietcombank", `
     <div class="bank-box">
-      <img src="./image/other/QR_bank.png" alt="QR Vietcombank">
+      <img src="../image/other/QR_bank.png" alt="QR Vietcombank">
 
       <div class="bank-info">
         <div><strong>Ngân hàng:</strong> Vietcombank</div>
@@ -105,9 +105,9 @@ function copyLink() {
 function openShareQR() {
   openModal("Chia sẻ QR", `
     <div class="qr-share">
-      <a href="./image/other/share-qr.png" download>
+      <a href="../image/other/share-qr.png" download>
         <img 
-          src="./image/other/share-qr.png" 
+          src="../image/other/share-qr.png" 
           alt="QR chia sẻ"
           style="width:220px;height:220px;border-radius:16px;"
         >
