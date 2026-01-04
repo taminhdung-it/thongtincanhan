@@ -36,7 +36,7 @@ function openMusic() {
   openModal("Bài hát", `
     <div class="media-box">
       <audio controls preload="metadata">
-        <source src="./music/bautroimoi.mp3" type="audio/mpeg">
+        <source src="../music/bautroimoi.mp3" type="audio/mpeg">
         Trình duyệt không hỗ trợ audio
       </audio>
     </div>
