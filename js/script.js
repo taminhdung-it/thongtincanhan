@@ -110,6 +110,7 @@ function openShareQR() {
       <img 
         src="./image/other/share-qr.png" 
         alt="QR chia sẻ"
+        style="width:220px;height:220px;border-radius:16px;"
       >
 
       <div class="bank-info">
@@ -119,7 +120,11 @@ function openShareQR() {
         </div>
       </div>
 
-      <a href="./image/other/share-qr.png" download class="primary-btn">
+      <a 
+        href="./image/other/share-qr.png" 
+        download="share-qr.png"
+        class="primary-btn"
+      >
         Lưu ảnh QR
       </a>
     </div>
