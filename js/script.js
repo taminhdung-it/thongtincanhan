@@ -5,18 +5,18 @@ document.querySelectorAll(".video-toggle").forEach(pill => {
 
         const isOpen = box.style.display === "block";
 
-        // Đóng
         if (isOpen) {
             media.pause();
-            media.currentTime = 0;
             box.style.display = "none";
-            return;
-        }
+        } else {
+            box.style.display = "block";
 
-        // Mở
-        box.style.display = "block";
+            // 🔥 BẮT BUỘC: ép browser load lại metadata
+            media.load();
+        }
     });
 });
+
 document.querySelectorAll(".qr-toggle").forEach(pill => {
     pill.addEventListener("click", () => {
         const qr = pill.querySelector(".qr-box");
