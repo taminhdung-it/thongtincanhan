@@ -105,10 +105,13 @@ function copyLink() {
 function openShareQR() {
   openModal("Chia sẻ QR", `
     <div class="qr-share">
-      <div id="shareQR"></div>
-      <button class="primary-btn" onclick="downloadQR()">
-        Lưu ảnh QR
-      </button>
+      <a href="./image/other/share-qr.png" download>
+        <img 
+          src="./image/other/share-qr.png" 
+          alt="QR chia sẻ"
+          style="width:220px;height:220px;border-radius:16px;"
+        >
+      </a>
     </div>
   `);
 
@@ -119,12 +122,5 @@ function openShareQR() {
       height: 220
     });
   }, 50);
-}
-
-function downloadQR() {
-  const link = document.createElement("a");
-  link.href = "./image/other/share-qr.png";
-  link.download = "share-qr.png";
-  link.click();
 }
 
